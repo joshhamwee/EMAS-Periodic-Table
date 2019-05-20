@@ -1,0 +1,84 @@
+<resources>
+    <string name="app_name"> EMAS Periodic Table App</string>
+    <string name="search_icon">Search icon</string>
+    <string name="search_hint">Please search by element, symbol or atomic number</string>
+    <string name="AN">Atomic Number:</string>
+    <string name="AS">Atomic Symbol:</string>
+    <string name="AM">Atomic Mass:</string>
+    <string name="CS">Crystal Structure:</string>
+    <string name="SOK">Shell Occupancy K:</string>
+    <string name="SOL">Shell Occupancy L:</string>
+    <string name="SOM">Shell Occupancy M:</string>
+    <string name="SON">Shell Occupancy N:</string>
+    <string name="SOO">Shell Occupancy O:</string>
+    <string name="SOP">Shell Occupancy P:</string>
+    <string name="SOQ">Shell Occupancy Q:</string>
+    <string name="VC">Valency Common:</string>
+    <string name="V">Valencies:</string>
+    <string name="MP">Melting Point:</string>
+    <string name="BP">Boiling Point:</string>
+    <string name="D">Density:</string>
+    <string name="KB">K β:</string>
+    <string name="KA">K α:</string>
+    <string name="LG23">L γ 2/3:</string>
+    <string name="LG1">L γ 1:</string>
+    <string name="LB4">L β 4:</string>
+    <string name="LB3">L β 3:</string>
+    <string name="LB2">L β 2:</string>
+    <string name="LB1">L β 1:</string>
+    <string name="LA">L α:</string>
+    <string name="MG">M γ:</string>
+    <string name="MB">M β:</string>
+    <string name="MA">M α:</string>
+    <string name="KE">K Edge:</string>
+    <string name="L3E">L3 Edge:</string>
+    <string name="L2E">L2 Edge:</string>
+    <string name="L1E">L1 Edge:</string>
+    <string name="M5E">M5 Edge:</string>
+    <string name="M4E">M4 Edge:</string>
+    <string name="M3E">M3 Edge:</string>
+    <string name="M2E">M2 Edge:</string>
+    <string name="M1E">M1 Edge:</string>
+    <string name="IR">Ionic Radius in Common Valence state: </string>
+    <string name="KLMHeader">KLM Energies:</string>
+    <string name="ABEHeader">Absorption Edges:</string>
+    <string name="energy_graph_1"><u>X-Ray Energies Plot</u></string>
+    <string name="energy_graph_2"><u>Spectrometer Element Ranges Plot</u></string>
+    <string name="energy_graph_3"><u>Soft X-Ray Energies Plot</u></string>
+    <string name="select_instrument" />
+    <string name="select_crystal" />
+    <string name="EMAS">European Microbeam Analysis Society</string>
+    <string name="prev_element">Previous Element</string>
+    <string name="next_element">Next Element</string>
+    <string name="home">HOME</string>
+    <string name="energy_graph">ENERGY GRAPH</string>
+    <string name="help">HELP</string>
+    <string name="about_us">ABOUT US</string>
+    <string name="about_emas_para"> EMAS is a non-profit organisation founded to meet the growing demands of microbeam analysis users and scientists for further education, communication and professional advice. Membership is open to all scientists and technicians active in the development and application of microbeam analysis techniques and equipment.
+        <a href="https://www.microbeamanalysis.eu/">Visit the EMAS website to learn more.</a> </string>
+    <string name="about_the_app"> EMAS required a mobile application to access and display key information for electron microanalysis. This will be based around a periodic table designed by M Matthews. The design is very information rich and consequently cannot be viewed in full at any scale smaller than approximately A3. This app, designed as a part of the module Software Product Engineering at the University of Bristol by Josh Hamwee, Sharlene D\'Silva, Andrei Bogdan, Finn Wilkinson and Kshitiv Upmanyu, solves this problem.
+        </string>
+    <string-array name="Instruments">
+        <item>Home</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
+    <string-array name="Unit_Change_Ins">
+        <item>Energy (keV)</item>
+        <item>Cameca (Sine Theta units)</item>
+        <item>Joel-X (L-Value)</item>
+        <item>Joel-F (L-Value)</item>
+        <item>Joel-H (L-Value)</item>
+    </string-array>
+
+    <string-array name="Unit_Change_Crystal">
+        <item>PET</item>
+        <item>TAP</item>
+        <item>QTZ 1011</item>
+        <item>LIF 200</item>
+        <item>LIF 220</item>
+    </string-array>
+</resources>

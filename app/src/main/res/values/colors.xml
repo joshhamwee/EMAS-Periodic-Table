@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2B2B2B</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="niceblue">#133337</color>
+    <color name="lightblue">#00ced1</color>
+    <color name="softpink">#ff7373</color>
+    <color name="turquoise">#009473</color>
+    <color name="orangey">#e8b30f</color>
+    <color name="grey">#666666</color>
+    <color name="orange">#f48038</color>
+    <color name="purple">#8a2be2</color>
+    <color name="darkgreen">#065535</color>
+    <color name="green">#008000</color>
+    <color name="blue">#088da5</color>
+    <color name="darkred">#990000</color>
+    <color name="darkpurple">#794044</color>
+    <color name="testgrey">#2B2B2B</color>
+    <color name="white">#FFFFFF</color>
+    <color name="lightgrey">#AAAAAA</color>
+    <color name="menuBG">#000000</color>
+    <color name="pastelYellow">#F3C35B</color>
+    <color name="pastelGreen">#54C796</color>
+    <color name="borderColor">#ffffff</color>
+    <color name="pastelPink">#f65f85</color>
+    <color name="pastelOrange">#fda053</color>
+    <color name="pastelBlue">#00aac3</color>
+    <color name="pastelPurple">#b66edf</color>
+    <color name="pastelGrey">#bdbdbd</color>
+    <color name="textBlack">#181C1D</color>
+    <color name="textViewBackground">#E9E9E9</color>
+    <color name="EMAS_text_color">#495FAE</color>
+</resources>

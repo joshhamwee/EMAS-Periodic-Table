@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:checkableBehavior="single"
+        android:id="@+id/group1">
+        <item
+            android:id="@+id/home"
+            android:icon="@drawable/ic_sharp_home_24px"
+            android:title="@string/home"/>
+        <item
+            android:id="@+id/graph"
+            android:icon="@drawable/ic_sharp_timeline_24px"
+            android:title="@string/energy_graph"/>
+    </group>
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/group2">
+        <item
+            android:id="@+id/help"
+            android:icon="@drawable/ic_sharp_help_24px"
+            android:title="@string/help"/>
+        <item
+            android:id="@+id/about_us"
+            android:icon="@drawable/ic_sharp_info_24px"
+            android:title="@string/about_us"/>
+    </group>
+
+
+</menu>

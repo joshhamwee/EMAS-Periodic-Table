@@ -1,0 +1,2330 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Use DrawerLayout as root container for activity -->
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <!-- Layout to contain contents of main body of screen (drawer will slide over this) -->
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.constraint.ConstraintLayout>
+
+    <FrameLayout
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            tools:concontentDescription=".MainActivity"
+            tools:layout_editor_absoluteY="73dp">
+
+            <include layout="@layout/logo_layout"/>
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/white"
+                android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <android.support.constraint.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <android.support.constraint.Guideline
+                android:id="@+id/guideline119"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.05555555555555555555555555555556" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/guideline120"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.94444444444444444444444444444444" />
+
+
+        </android.support.constraint.ConstraintLayout>
+
+
+            <LinearLayout
+            android:id="@+id/linearLayout6"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="8dp"
+            android:orientation="vertical"
+            android:weightSum="9.5"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+
+                <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <ImageButton
+                    android:id="@+id/H"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/colour1"
+                    android:contentDescription="@string/el001"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/el001" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/guideline"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.05555555555555555555555555555556" />
+
+                <ImageButton
+                    android:id="@+id/He"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/colour6"
+                    android:contentDescription="@string/el002"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/guideline2"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/el002" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/guideline2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.94444444444444444444444444444444" />
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <ImageButton
+                    android:id="@+id/Li"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/guideline3"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/colour1"
+                    android:contentDescription="@string/el003"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/el003" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/guideline3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.05555555555555555555555555555556" />
+
+                <ImageButton
+                    android:id="@+id/Be"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/colour2"
+                    android:contentDescription="@string/el004"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/el004"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline4"
+                    app:layout_constraintStart_toEndOf="@+id/guideline3"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/guideline4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.11111111111111111111111111111111" />
+
+                <ImageButton
+                    android:id="@+id/B"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/colour5"
+                    android:contentDescription="@string/el005"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline6"
+                    app:layout_constraintStart_toEndOf="@+id/guideline5"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/el005" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/guideline5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.66666666666666666666666666666667" />
+
+                <ImageButton
+                    android:id="@+id/C"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/colour5"
+                    android:contentDescription="@string/el006"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/el006"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline7"
+                    app:layout_constraintStart_toEndOf="@+id/guideline6"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/guideline6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.72222222222222222222222222222222" />
+
+                <ImageButton
+                    android:id="@+id/N"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/colour5"
+                    android:contentDescription="@string/el007"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline8"
+                    app:layout_constraintStart_toEndOf="@+id/guideline7"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/el007" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/guideline7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.77777777777777777777777777777784" />
+
+                <ImageButton
+                    android:id="@+id/O"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/colour5"
+                    android:contentDescription="@string/el008"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline9"
+                    app:layout_constraintStart_toEndOf="@+id/guideline8"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/el008" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/guideline8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.8333333333333333333333333333334" />
+
+                <ImageButton
+                    android:id="@+id/F"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/colour5"
+                    android:contentDescription="@string/el009"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline10"
+                    app:layout_constraintStart_toEndOf="@+id/guideline9"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/el009" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/guideline9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.88888888888888888888888888888896" />
+
+                <ImageButton
+                    android:id="@+id/Ne"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/colour6"
+                    android:contentDescription="@string/el010"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/guideline10"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/el010" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/guideline10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.94444444444444444444444444444444" />
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <ImageButton
+                    android:id="@+id/Na"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/colour1"
+                    android:contentDescription="@string/el011"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline11"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/el011" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/guideline11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.05555555555555555555555555555556" />
+
+                <ImageButton
+                    android:id="@+id/Mg"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/colour2"
+                    android:contentDescription="@string/el012"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline12"
+                    app:layout_constraintStart_toEndOf="@+id/guideline11"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/el012" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/guideline12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.11111111111111111111111111111111" />
+
+                <ImageButton
+                    android:id="@+id/Al"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/colour4"
+                    android:contentDescription="@string/el013"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/el013"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline14"
+                    app:layout_constraintStart_toEndOf="@+id/guideline13"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/guideline13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.66666666666666666666666666666667" />
+
+                <ImageButton
+                    android:id="@+id/Si"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/colour5"
+                    android:contentDescription="@string/el014"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline15"
+                    app:layout_constraintStart_toEndOf="@+id/guideline14"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/el014" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/guideline14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.72222222222222222222222222222222" />
+
+                <ImageButton
+                    android:id="@+id/P"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/colour5"
+                    android:contentDescription="@string/el015"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline16"
+                    app:layout_constraintStart_toEndOf="@+id/guideline15"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/el015" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/guideline15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.77777777777777777777777777777784" />
+
+                <ImageButton
+                    android:id="@+id/S"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/colour5"
+                    android:contentDescription="@string/el016"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline17"
+                    app:layout_constraintStart_toEndOf="@+id/guideline16"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/el016" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/guideline16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.8333333333333333333333333333334" />
+
+                <ImageButton
+                    android:id="@+id/Cl"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/colour5"
+                    android:contentDescription="@string/el017"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline18"
+                    app:layout_constraintStart_toEndOf="@+id/guideline17"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/el017" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/guideline17"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.88888888888888888888888888888896" />
+
+                <ImageButton
+                    android:id="@+id/Ar"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/colour6"
+                    android:contentDescription="@string/el018"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/guideline18"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/el018" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/guideline18"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.94444444444444444444444444444444" />
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <ImageButton
+                    android:id="@+id/K"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/colour1"
+                    android:contentDescription="@string/el019"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline19"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/el019" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/guideline19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.05555555555555555555555555555556" />
+
+                <ImageButton
+                    android:id="@+id/Ca"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/colour2"
+                    android:contentDescription="@string/el020"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline20"
+                    app:layout_constraintStart_toEndOf="@+id/guideline19"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/el020" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/guideline20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.11111111111111111111111111111111" />
+
+                <ImageButton
+                    android:id="@+id/Sc"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/colour3"
+                    android:contentDescription="@string/el021"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline21"
+                    app:layout_constraintStart_toEndOf="@+id/guideline20"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/el021" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/guideline21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.16666666666666666666666666666668" />
+
+                <ImageButton
+                    android:id="@+id/Ti"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/colour3"
+                    android:contentDescription="@string/el022"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline22"
+                    app:layout_constraintStart_toEndOf="@+id/guideline21"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/el022" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/guideline22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.22222222222222222222222222222224" />
+
+                <ImageButton
+                    android:id="@+id/V"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/colour3"
+                    android:contentDescription="@string/el023"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline23"
+                    app:layout_constraintStart_toEndOf="@+id/guideline22"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/el023" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/guideline23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.2777777777777777777777777777778" />
+
+                <ImageButton
+                    android:id="@+id/Cr"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/colour3"
+                    android:contentDescription="@string/el024"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline24"
+                    app:layout_constraintStart_toEndOf="@+id/guideline23"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/el024" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/guideline24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.33333333333333333333333333333336" />
+
+                <ImageButton
+                    android:id="@+id/Mn"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/colour3"
+                    android:contentDescription="@string/el025"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline25"
+                    app:layout_constraintStart_toEndOf="@+id/guideline24"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/el025" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/guideline25"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.38888888888888888888888888888892" />
+
+                <ImageButton
+                    android:id="@+id/Fe"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/colour3"
+                    android:contentDescription="@string/el026"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline26"
+                    app:layout_constraintStart_toEndOf="@+id/guideline25"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/el026" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/guideline26"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.44444444444444444444444444444448" />
+
+                <ImageButton
+                    android:id="@+id/Co"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/colour3"
+                    android:contentDescription="@string/el027"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline27"
+                    app:layout_constraintStart_toEndOf="@+id/guideline26"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/el027" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/guideline27"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.50000000000000000000000000000004" />
+
+                <ImageButton
+                    android:id="@+id/Ni"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/colour3"
+                    android:contentDescription="@string/el028"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline28"
+                    app:layout_constraintStart_toEndOf="@+id/guideline27"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/el028" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/guideline28"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.5555555555555555555555555555556" />
+
+                <ImageButton
+                    android:id="@+id/Cu"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/colour3"
+                    android:contentDescription="@string/el029"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline29"
+                    app:layout_constraintStart_toEndOf="@+id/guideline28"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/el029" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/guideline29"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.61111111111111111111111111111116" />
+
+                <ImageButton
+                    android:id="@+id/Zn"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/colour3"
+                    android:contentDescription="@string/el030"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/el030"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline30"
+                    app:layout_constraintStart_toEndOf="@+id/guideline29"
+                    app:layout_constraintTop_toTopOf="parent"  />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/guideline30"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.66666666666666666666666666666672" />
+
+                <ImageButton
+                    android:id="@+id/Ga"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/colour4"
+                    android:contentDescription="@string/el031"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline31"
+                    app:layout_constraintStart_toEndOf="@+id/guideline30"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/el031" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/guideline31"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.72222222222222222222222222222228" />
+
+                <ImageButton
+                    android:id="@+id/Ge"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/colour4"
+                    android:contentDescription="@string/el032"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline32"
+                    app:layout_constraintStart_toEndOf="@+id/guideline31"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/el032" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/guideline32"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.77777777777777777777777777777784" />
+
+                <ImageButton
+                    android:id="@+id/As"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/colour5"
+                    android:contentDescription="@string/el033"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline33"
+                    app:layout_constraintStart_toEndOf="@+id/guideline32"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/el033" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/guideline33"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.8333333333333333333333333333334" />
+
+                <ImageButton
+                    android:id="@+id/Se"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/colour5"
+                    android:contentDescription="@string/el034"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline34"
+                    app:layout_constraintStart_toEndOf="@+id/guideline33"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/el034" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/guideline34"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.88888888888888888888888888888896" />
+
+                <ImageButton
+                    android:id="@+id/Br"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/colour5"
+                    android:contentDescription="@string/el035"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline35"
+                    app:layout_constraintStart_toEndOf="@+id/guideline34"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/el035" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/guideline35"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.94444444444444444444444444444452" />
+
+                <ImageButton
+                    android:id="@+id/Kr"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/colour6"
+                    android:contentDescription="@string/el036"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/guideline35"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/el036" />
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <ImageButton
+                    android:id="@+id/Rb"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/colour1"
+                    app:srcCompat="@drawable/el037"
+                    android:contentDescription="@string/el037"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline36"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/guideline36"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.05555555555555555555555555555556" />
+
+                <ImageButton
+                    android:id="@+id/Sr"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/colour2"
+                    android:contentDescription="@string/el038"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline37"
+                    app:layout_constraintStart_toEndOf="@+id/guideline36"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/el038" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/guideline37"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.11111111111111111111111111111111" />
+
+                <ImageButton
+                    android:id="@+id/Y"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/colour3"
+                    android:contentDescription="@string/el039"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline38"
+                    app:layout_constraintStart_toEndOf="@+id/guideline37"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/el039" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/guideline38"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.16666666666666666666666666666668" />
+
+                <ImageButton
+                    android:id="@+id/Zr"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/colour3"
+                    android:contentDescription="@string/el040"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline39"
+                    app:layout_constraintStart_toEndOf="@+id/guideline38"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/el040" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/guideline39"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.22222222222222222222222222222224" />
+
+                <ImageButton
+                    android:id="@+id/Nb"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/colour3"
+                    android:contentDescription="@string/el041"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline40"
+                    app:layout_constraintStart_toEndOf="@+id/guideline39"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/el041" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/guideline40"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.2777777777777777777777777777778" />
+
+                <ImageButton
+                    android:id="@+id/Mo"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/colour3"
+                    android:contentDescription="@string/el042"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline41"
+                    app:layout_constraintStart_toEndOf="@+id/guideline40"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/el042" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/guideline41"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.33333333333333333333333333333336" />
+
+                <ImageButton
+                    android:id="@+id/Tc"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/colour3"
+                    android:contentDescription="@string/el043"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline42"
+                    app:layout_constraintStart_toEndOf="@+id/guideline41"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/el043" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/guideline42"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.38888888888888888888888888888892" />
+
+                <ImageButton
+                    android:id="@+id/Ru"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/colour3"
+                    android:contentDescription="@string/el044"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline43"
+                    app:layout_constraintStart_toEndOf="@+id/guideline42"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/el044" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/guideline43"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.44444444444444444444444444444448" />
+
+                <ImageButton
+                    android:id="@+id/Rh"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/colour3"
+                    android:contentDescription="@string/el045"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline44"
+                    app:layout_constraintStart_toEndOf="@+id/guideline43"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/el045" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/guideline44"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.50000000000000000000000000000004" />
+
+                <ImageButton
+                    android:id="@+id/Pd"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/colour3"
+                    android:contentDescription="@string/el046"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline45"
+                    app:layout_constraintStart_toEndOf="@+id/guideline44"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/el046" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/guideline45"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.5555555555555555555555555555556" />
+
+                <ImageButton
+                    android:id="@+id/Ag"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/colour3"
+                    android:contentDescription="@string/el047"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline46"
+                    app:layout_constraintStart_toEndOf="@+id/guideline45"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/el047" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/guideline46"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.61111111111111111111111111111116" />
+
+                <ImageButton
+                    android:id="@+id/Cd"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/colour3"
+                    android:contentDescription="@string/el048"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline47"
+                    app:layout_constraintStart_toEndOf="@+id/guideline46"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/el048" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/guideline47"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.66666666666666666666666666666672" />
+
+                <ImageButton
+                    android:id="@+id/In"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/colour4"
+                    android:contentDescription="@string/el049"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline48"
+                    app:layout_constraintStart_toEndOf="@+id/guideline47"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/el049" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/guideline48"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.72222222222222222222222222222228" />
+
+                <ImageButton
+                    android:id="@+id/Sn"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/colour4"
+                    android:contentDescription="@string/el050"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline49"
+                    app:layout_constraintStart_toEndOf="@+id/guideline48"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/el050" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/guideline49"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.77777777777777777777777777777784" />
+
+                <ImageButton
+                    android:id="@+id/Sb"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/colour4"
+                    android:contentDescription="@string/el051"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/el051"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline50"
+                    app:layout_constraintStart_toEndOf="@+id/guideline49"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/guideline50"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.8333333333333333333333333333334" />
+
+                <ImageButton
+                    android:id="@+id/Te"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/colour5"
+                    android:contentDescription="@string/el052"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline51"
+                    app:layout_constraintStart_toEndOf="@+id/guideline50"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/el052" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/guideline51"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.88888888888888888888888888888896" />
+
+                <ImageButton
+                    android:id="@+id/I"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/colour5"
+                    android:contentDescription="@string/el053"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline52"
+                    app:layout_constraintStart_toEndOf="@+id/guideline51"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/el053" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/guideline52"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.94444444444444444444444444444452" />
+
+                <ImageButton
+                    android:id="@+id/Xe"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/colour6"
+                    android:contentDescription="@string/el054"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/guideline52"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/el054" />
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <ImageButton
+                    android:id="@+id/Cs"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/colour1"
+                    android:contentDescription="@string/el055"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/el055"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline53"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/guideline53"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.05555555555555555555555555555556" />
+
+                <ImageButton
+                    android:id="@+id/Ba"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/colour2"
+                    android:contentDescription="@string/el056"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline54"
+                    app:layout_constraintStart_toEndOf="@+id/guideline53"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/el056" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/guideline54"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.11111111111111111111111111111111" />
+
+                <ImageButton
+                    android:id="@+id/La"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/colour3"
+                    android:contentDescription="@string/el057"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline55"
+                    app:layout_constraintStart_toEndOf="@+id/guideline54"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/el057" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/guideline55"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.16666666666666666666666666666668" />
+
+                <ImageButton
+                    android:id="@+id/Hf"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/colour3"
+                    android:contentDescription="@string/el072"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline56"
+                    app:layout_constraintStart_toEndOf="@+id/guideline55"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/el072" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/guideline56"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.22222222222222222222222222222224" />
+
+                <ImageButton
+                    android:id="@+id/Ta"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/colour3"
+                    android:contentDescription="@string/el073"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline57"
+                    app:layout_constraintStart_toEndOf="@+id/guideline56"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/el073" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/guideline57"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.2777777777777777777777777777778" />
+
+                <ImageButton
+                    android:id="@+id/W"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/colour3"
+                    android:contentDescription="@string/el074"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline58"
+                    app:layout_constraintStart_toEndOf="@+id/guideline57"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/el074" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/guideline58"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.33333333333333333333333333333336" />
+
+                <ImageButton
+                    android:id="@+id/Re"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/colour3"
+                    android:contentDescription="@string/el075"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline59"
+                    app:layout_constraintStart_toEndOf="@+id/guideline58"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/el075" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/guideline59"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.38888888888888888888888888888892" />
+
+                <ImageButton
+                    android:id="@+id/Os"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/colour3"
+                    android:contentDescription="@string/el076"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline60"
+                    app:layout_constraintStart_toEndOf="@+id/guideline59"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/el076" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/guideline60"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.44444444444444444444444444444448" />
+
+                <ImageButton
+                    android:id="@+id/Ir"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/colour3"
+                    android:contentDescription="@string/el077"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline61"
+                    app:layout_constraintStart_toEndOf="@+id/guideline60"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/el077" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/guideline61"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.50000000000000000000000000000004" />
+
+                <ImageButton
+                    android:id="@+id/Pt"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/colour3"
+                    android:contentDescription="@string/el078"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline62"
+                    app:layout_constraintStart_toEndOf="@+id/guideline61"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/el078" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/guideline62"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.5555555555555555555555555555556" />
+
+                <ImageButton
+                    android:id="@+id/Au"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/colour3"
+                    android:contentDescription="@string/el079"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline63"
+                    app:layout_constraintStart_toEndOf="@+id/guideline62"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/el079" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/guideline63"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.61111111111111111111111111111116" />
+
+                <ImageButton
+                    android:id="@+id/Hg"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/colour3"
+                    android:contentDescription="@string/el080"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline64"
+                    app:layout_constraintStart_toEndOf="@+id/guideline63"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/el080" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/guideline64"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.66666666666666666666666666666672" />
+
+                <ImageButton
+                    android:id="@+id/Tl"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/colour4"
+                    android:contentDescription="@string/el081"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline65"
+                    app:layout_constraintStart_toEndOf="@+id/guideline64"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/el081" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/guideline65"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.72222222222222222222222222222228" />
+
+                <ImageButton
+                    android:id="@+id/Pb"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/colour4"
+                    android:contentDescription="@string/el082"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline66"
+                    app:layout_constraintStart_toEndOf="@+id/guideline65"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/el082" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/guideline66"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.77777777777777777777777777777784" />
+
+                <ImageButton
+                    android:id="@+id/Bi"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/colour4"
+                    android:contentDescription="@string/el083"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline67"
+                    app:layout_constraintStart_toEndOf="@+id/guideline66"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/el083" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/guideline67"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.8333333333333333333333333333334" />
+
+                <ImageButton
+                    android:id="@+id/Po"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/colour4"
+                    android:contentDescription="@string/el084"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline68"
+                    app:layout_constraintStart_toEndOf="@+id/guideline67"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/el084" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/guideline68"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.88888888888888888888888888888896" />
+
+                <ImageButton
+                    android:id="@+id/At"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/colour5"
+                    android:contentDescription="@string/el085"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline69"
+                    app:layout_constraintStart_toEndOf="@+id/guideline68"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/el085" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/guideline69"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.94444444444444444444444444444452" />
+
+                <ImageButton
+                    android:id="@+id/Rn"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/colour6"
+                    android:contentDescription="@string/el086"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/guideline69"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/el086" />
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <ImageButton
+                    android:id="@+id/Fr"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/colour1"
+                    android:contentDescription="@string/el087"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline70"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/el087" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/guideline70"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.05555555555555555555555555555556" />
+
+                <ImageButton
+                    android:id="@+id/Ra"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/colour2"
+                    android:contentDescription="@string/el088"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline71"
+                    app:layout_constraintStart_toEndOf="@+id/guideline70"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/el088" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/guideline71"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.11111111111111111111111111111111" />
+
+                <ImageButton
+                    android:id="@+id/Ac"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/colour3"
+                    android:contentDescription="@string/el089"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline72"
+                    app:layout_constraintStart_toEndOf="@+id/guideline71"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/el089" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/guideline72"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.16666666666666666666666666666668" />
+
+            </android.support.constraint.ConstraintLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5" />
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/guideline87"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.16666666666666666666666666666668" />
+
+                <ImageButton
+                    android:id="@+id/Ce"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/colour7"
+                    android:contentDescription="@string/el058"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline88"
+                    app:layout_constraintStart_toEndOf="@+id/guideline87"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/el058" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/guideline88"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.22222222222222222222222222222224" />
+
+                <ImageButton
+                    android:id="@+id/Pr"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/colour7"
+                    android:contentDescription="@string/el059"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline89"
+                    app:layout_constraintStart_toEndOf="@+id/guideline88"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/el059" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/guideline89"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.2777777777777777777777777777778" />
+
+                <ImageButton
+                    android:id="@+id/Nd"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/colour7"
+                    android:contentDescription="@string/el060"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline90"
+                    app:layout_constraintStart_toEndOf="@+id/guideline89"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/el060" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/guideline90"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.33333333333333333333333333333336" />
+
+                <ImageButton
+                    android:id="@+id/Pm"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/colour7"
+                    android:contentDescription="@string/el061"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline91"
+                    app:layout_constraintStart_toEndOf="@+id/guideline90"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/el061" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/guideline91"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.38888888888888888888888888888892" />
+
+                <ImageButton
+                    android:id="@+id/Sm"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/colour7"
+                    android:contentDescription="@string/el062"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline92"
+                    app:layout_constraintStart_toEndOf="@+id/guideline91"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/el062" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/guideline92"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.44444444444444444444444444444448" />
+
+                <ImageButton
+                    android:id="@+id/Eu"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/colour7"
+                    android:contentDescription="@string/el063"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline93"
+                    app:layout_constraintStart_toEndOf="@+id/guideline92"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/el063" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/guideline93"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.50000000000000000000000000000004" />
+
+                <ImageButton
+                    android:id="@+id/Gd"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/colour7"
+                    android:contentDescription="@string/el064"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline94"
+                    app:layout_constraintStart_toEndOf="@+id/guideline93"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/el064" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/guideline94"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.5555555555555555555555555555556" />
+
+                <ImageButton
+                    android:id="@+id/Tb"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/colour7"
+                    android:contentDescription="@string/el065"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline95"
+                    app:layout_constraintStart_toEndOf="@+id/guideline94"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/el065" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/guideline95"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.61111111111111111111111111111116" />
+
+                <ImageButton
+                    android:id="@+id/Dy"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/colour7"
+                    android:contentDescription="@string/el066"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline96"
+                    app:layout_constraintStart_toEndOf="@+id/guideline95"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/el066" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/guideline96"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.66666666666666666666666666666672" />
+
+                <ImageButton
+                    android:id="@+id/Ho"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/colour7"
+                    android:contentDescription="@string/el067"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline97"
+                    app:layout_constraintStart_toEndOf="@+id/guideline96"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/el067" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/guideline97"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.72222222222222222222222222222228" />
+
+                <ImageButton
+                    android:id="@+id/Er"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/colour7"
+                    android:contentDescription="@string/el068"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline98"
+                    app:layout_constraintStart_toEndOf="@+id/guideline97"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/el068" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/guideline98"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.77777777777777777777777777777784" />
+
+                <ImageButton
+                    android:id="@+id/Tm"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/colour7"
+                    android:contentDescription="@string/el069"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline99"
+                    app:layout_constraintStart_toEndOf="@+id/guideline98"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/el069" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/guideline99"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.8333333333333333333333333333334" />
+
+                <ImageButton
+                    android:id="@+id/Yb"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/colour7"
+                    android:contentDescription="@string/el070"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline100"
+                    app:layout_constraintStart_toEndOf="@+id/guideline99"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/el070" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/guideline100"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.88888888888888888888888888888896" />
+
+                <ImageButton
+                    android:id="@+id/Lu"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/colour7"
+                    android:contentDescription="@string/el071"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline101"
+                    app:layout_constraintStart_toEndOf="@+id/guideline100"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/el071" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/guideline101"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.94444444444444444444444444444452" />
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/guideline102"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.16666666666666666666666666666668" />
+
+                <ImageButton
+                    android:id="@+id/Th"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/colour7"
+                    android:contentDescription="@string/el090"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline103"
+                    app:layout_constraintStart_toEndOf="@+id/guideline102"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/el090" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/guideline103"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.22222222222222222222222222222224" />
+
+                <ImageButton
+                    android:id="@+id/Pa"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/colour7"
+                    android:contentDescription="@string/el091"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline104"
+                    app:layout_constraintStart_toEndOf="@+id/guideline103"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/el091" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/guideline104"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.2777777777777777777777777777778" />
+
+                <ImageButton
+                    android:id="@+id/U"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/colour7"
+                    android:contentDescription="@string/el092"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline105"
+                    app:layout_constraintStart_toEndOf="@+id/guideline104"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/el092" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/guideline105"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.33333333333333333333333333333336" />
+
+                <ImageButton
+                    android:id="@+id/Np"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/colour7"
+                    android:contentDescription="@string/el093"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline106"
+                    app:layout_constraintStart_toEndOf="@+id/guideline105"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/el093" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/guideline106"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.38888888888888888888888888888892" />
+
+                <ImageButton
+                    android:id="@+id/Pu"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/colour7"
+                    android:contentDescription="@string/el094"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline107"
+                    app:layout_constraintStart_toEndOf="@+id/guideline106"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/el094" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/guideline107"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.44444444444444444444444444444448" />
+
+                <ImageButton
+                    android:id="@+id/Am"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/colour7"
+                    android:contentDescription="@string/el095"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline108"
+                    app:layout_constraintStart_toEndOf="@+id/guideline107"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/el095" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/guideline108"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.50000000000000000000000000000004" />
+
+                <ImageButton
+                    android:id="@+id/Cm"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/colour7"
+                    android:contentDescription="@string/el096"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline109"
+                    app:layout_constraintStart_toEndOf="@+id/guideline108"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/el096" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/guideline109"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.5555555555555555555555555555556" />
+
+                <ImageButton
+                    android:id="@+id/Bk"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/colour7"
+                    android:contentDescription="@string/el097"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline110"
+                    app:layout_constraintStart_toEndOf="@+id/guideline109"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/el097" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/guideline110"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.61111111111111111111111111111116" />
+
+                <ImageButton
+                    android:id="@+id/Cf"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/colour7"
+                    android:contentDescription="@string/el098"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline111"
+                    app:layout_constraintStart_toEndOf="@+id/guideline110"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/el098" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/guideline111"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.66666666666666666666666666666672" />
+
+                <ImageButton
+                    android:id="@+id/Es"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/colour7"
+                    android:contentDescription="@string/el099"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline112"
+                    app:layout_constraintStart_toEndOf="@+id/guideline111"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/el099" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/guideline112"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.72222222222222222222222222222228" />
+
+                <ImageButton
+                    android:id="@+id/Fm"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/colour7"
+                    android:contentDescription="@string/el100"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline113"
+                    app:layout_constraintStart_toEndOf="@+id/guideline112"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/el100" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/guideline113"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.77777777777777777777777777777784" />
+
+                <ImageButton
+                    android:id="@+id/Md"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/colour7"
+                    android:contentDescription="@string/el101"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline114"
+                    app:layout_constraintStart_toEndOf="@+id/guideline113"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/el101" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/guideline114"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.8333333333333333333333333333334" />
+
+                <ImageButton
+                    android:id="@+id/No"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/colour7"
+                    android:contentDescription="@string/el102"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline115"
+                    app:layout_constraintStart_toEndOf="@+id/guideline114"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/el102" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/guideline115"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.88888888888888888888888888888896" />
+
+                <ImageButton
+                    android:id="@+id/Lr"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/colour7"
+                    android:contentDescription="@string/el103"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline116"
+                    app:layout_constraintStart_toEndOf="@+id/guideline115"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/el103" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/guideline116"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.94444444444444444444444444444452" />
+
+            </android.support.constraint.ConstraintLayout>
+
+        </LinearLayout>
+        </android.support.constraint.ConstraintLayout>
+
+    </FrameLayout>
+
+    <!-- Container for contents of drawer - use NavigationView to make configuration easier -->
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/menu_drawer"/>
+
+</android.support.v4.widget.DrawerLayout>
+
+
+
